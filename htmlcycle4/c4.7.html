@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Largest among 3 numbers </title>
+</head>
+<body>
+Enter first number: <input type="text" id="myText1" ><br><br>
+Enter second number: <input type="text" id="myText2" ><br><br>
+Enter third number: <input type="text" id="myText3" ><br><br>
+<p id="b"></p>
+
+<button onclick="myFunction()">Find</button>
+<p id="b"></p>
+<script>
+function myFunction() {
+   var a = document.getElementById("myText1").value;
+   var t = document.getElementById("myText2").value;
+   var s = document.getElementById("myText3").value;
+   if (a > t && a > s) {
+   	
+  document.getElementById("b").innerHTML = a + "is the largest";
+  }
+else if(s > a && s > t)
+{
+	document.getElementById("b").innerHTML = s + "is the largest";
+}
+else{
+  document.getElementById("b").innerHTML = t + "is the largest";
+}
+}
+
+</script>
+</body>
+</html>

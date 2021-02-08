@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Multiple of 3 ur 7</title></head>
+<body>
+Enter first number: <input type="text" id="myText1" onchange="myFunction()">
+<p id="b"></p>
+<script>
+function myFunction() {
+   var a = document.getElementById("myText1").value;
+   var t = parseInt(a)%3;
+   var s = parseInt(a)%7;
+   if (t == 0 || s==0) {
+   	
+  alert(" Entered number is a multiple of 3 or 7")
+  }
+else
+{
+	alert(" Entered number is not a multiple of 3 or 7")
+}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+   <head><title>Armstrong or not</title></head>  
+  <body>
+    <script>
+        var sum = 0;
+        const number = prompt('Enter a three-digit positive integer: ');
+        var temp = number;
+        while (temp > 0) 
+         {
+           var remainder = temp % 10;
+           sum += remainder * remainder * remainder;
+            temp = parseInt(temp / 10); 
+          }
+
+        if (sum == number) 
+         {
+             alert(" an Armstrong number");
+          }
+          else 
+          {
+            alert(" is not an Armstrong number");
+          }
+     </script>
+
+   </body>
+</html>
