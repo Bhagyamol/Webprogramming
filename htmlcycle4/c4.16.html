@@ -1,0 +1,47 @@
+<html>
+<head>
+<style> 
+.button {
+background-color: orange;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+h2 {
+font-size : 40px;
+color : white;
+font-weight : bold;
+text-decoration : underline;
+}
+body {
+background-color : brown;
+text-align : center;
+}
+</style>
+</head>
+<body>
+
+<br><br>
+<h2>Change the color of background by just clicking on the button</h2>
+
+<button class="button" onclick="bgcolor()">Set Color</button>
+
+<script>
+var count=0;
+function bgcolor(color) {
+var colorList = ["red","green","blue","coral","lenin","grey","lightblue","purple","yellow","brown"];
+document.body.style.backgroundColor = colorList[count]; 
+count++;
+if (count==colorList.length) 
+count=0; 
+}
+</script>
+
+</body>
+</html>
