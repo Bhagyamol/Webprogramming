@@ -1,0 +1,24 @@
+<html>
+    <head><title>Max out of 3</title></head>
+  <body>
+     <?php
+        $a=1;
+        $b=4;
+        $c=3;
+     if($a>$b)
+       {
+       if ($a>$c)
+       echo "Maximam num a= $a";
+     else
+       echo "Maximum num c= $c";
+      }
+     else
+       {
+        if($c>$b)
+       echo "Maximum num c= $c";
+       else
+         echo "Maximum num b= $b";
+        }
+     ?>
+ </body>
+</html> 
